@@ -2,7 +2,6 @@
 import Graphics.Collage (collage, toForm)
 import Graphics.Element (fittedImage, Element)
 import List
-import Text
 
 import Regions (drawRegion, Region, regions)
 
