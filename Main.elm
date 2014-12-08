@@ -1,25 +1,24 @@
 -- imports
-
+import Graphics.Collage (collage, toForm, circle, filled, move, Form)
+import Graphics.Element (fittedImage, Element)
+import List (map)
+import Color (rgba, Color)
 
 -- types
-type Name = String
-type Units = Int
-type Location = (Float, Float)
-type Owner = Int
-type Region = {
-
+type alias Name = String
+type alias Units = Int
+type alias Owner = Int
+type alias Location = (Float, Float)
+type alias Region = {
       name: Name
     , location: Location
     , owner: Owner
     , units: Units
     , continent: Name
-
     }
 
-
-type Board =
-    {
-      regions      : [Region]
+type alias Board = {
+      regions      : List Region
     }
 
 
